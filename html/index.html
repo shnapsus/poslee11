@@ -21,7 +21,8 @@
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 
-
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<link type="text/css" href="skin/jplayer.blue.monday.css" rel="stylesheet" />
 
 
 	<script type="text/javascript" src="js/js.js"></script>
@@ -56,48 +57,99 @@
 	<div class="center i-clearfix">
 		<aside class="sidebar">
 
-			<section class="widget">
-				<h4 class="widgettitle">Sidebar</h4>
-				<ul>
-					<li><a href="#">WordPress</a> (3)</li>
-					<li><a href="#">Design</a> (23)</li>
+			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+			<div id="jp_container_1" class="jp-audio">
+				<div class="jp-type-single">
+					<div class="jp-details">
+						<span class="jp-title"></span>
+					</div>
+					<div class="jp-gui jp-interface">
+						<div class="jp-progress">
+							<div class="jp-seek-bar">
+								<div class="jp-play-bar"></div>
+							</div>
+						</div>
+						<div class="jp-time-holder">
+							<div class="jp-current-time"></div> /
+							<div class="jp-duration"></div>
+						</div>
+						<div class="jp-volume-bar">
+							<div class="jp-volume-bar-value"></div>
+						</div>
+						<ul class="jp-controls">
+							<li><a href="javascript:;" class="jp-previous" tabindex="1">prew</a></li>
+							<li><a href="javascript:;" class="jp-play" tabindex="1">play</a></li>
+							<li><a href="javascript:;" class="jp-pause" tabindex="1">pause</a></li>
+							<li><a href="javascript:;" class="jp-stop" tabindex="1">stop</a></li>
+							<li><a href="javascript:;" class="jp-next" tabindex="1">next</a></li>
+							<li><a href="javascript:;" class="jp-mute" tabindex="1" title="mute">mute</a></li>
+							<li><a href="javascript:;" class="jp-unmute" tabindex="1" title="unmute">unmute</a></li>
+							<li><a href="javascript:;" class="jp-volume-max" tabindex="1" title="max volume">max volume</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
 
-					<li><a href="#">Design </a>(18)</li>
-				</ul>
+			<section class="sotial i-clearfix">
+				<a href="#" class="sotial1">vkontakte</a>
+				<a href="#" class="sotial2">facebook</a>
+				<a href="#" class="sotial3">youtube</a>
+				<a href="#" class="sotial4">soundcloud</a>
 			</section>
 
-			<section class="widget clearfix">
-				<h4 class="widgettitle">Flickr</h4>
-				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8.&display=latest&size=s&layout=x&source=user&user=52839779@N02"></script>
-			</section>
-
+			<img src="images/vk.png" alt="" />
 
 		</aside>
 
 
 		<div class="content">
 
-			<article class="post clearfix">
+			<article class="afisha">
 
-				<header>
-					<h1 class="post-title"><a href="#">Just a Post Title</a></h1>
-
-					<p class="post-meta"><time class="post-date" datetime="2011-05-08" pubdate>May 8, 2011</time> <em>in</em> <a href="#">Category</a></p>
-				</header>
-				<figure class="post-image">
-					<img src="images/sample-image.jpg" />
-					<figcaption></figcaption>
-				</figure>
-				<p>Fusce ut sem est. In eu sagittis felis. In gravida arcu ut neque ornare vitae rutrum turpis vehicula. Nunc ultrices sem mollis metus rutrum non malesuada metus fermentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Pellentesque interdum rutrum quam, a pharetra est pulvinar ac. Vestibulum congue nisl magna. Ut vulputate odio id dui convallis in adipiscing libero condimentum. Nunc et pharetra enim. Praesent pharetra, neque et luctus tempor, leo sapien faucibus leo, a dignissim turpis ipsum sed libero. Sed sed luctus purus. Aliquam faucibus turpis at libero consectetur euismod. Nam nunc lectus, congue non egestas quis, condimentum ut arcu. Nulla placerat, tortor non egestas rutrum, mi turpis adipiscing dui, et mollis turpis tortor vel orci. Cras a fringilla nunc. Suspendisse volutpat, eros congue scelerisque iaculis, magna odio sodales dui, vitae vulputate elit metus ac arcu. Mauris consequat rhoncus dolor id sagittis. Cras tortor elit, aliquet quis tincidunt eget, dignissim non tortor.</p>
-
-				<h3>Vimeo Video</h3>
-				<div class="video">
-					<iframe src="http://player.vimeo.com/video/6284199" width="550" height="400" frameborder="0"></iframe>
+				<div class="afisha__item">
+					<strong>Ростов</strong><br />
+					<em>25 февраля</em><br />
+					Начало в 19:00 <br />
+					Клуб «Рослая Семечка», ул. Самарская, д. 14, кор. 6. Тел.: +7 7342 74382
+					<br />
+					<a href="#" class="btn">купить билет</a>
 				</div>
-				<!-- /.video -->
+
+				<div class="afisha__item">
+					<strong>Москва</strong><br />
+					<em>28 февраля</em><br />
+					Начало в 20:00<br />
+					Клуб «28 тонн», ул. Бевза, д. 14, кор. 6
+					<br />
+					<a href="#" class="btn">купить билет</a>
+				</div>
+
+				<div class="afisha__item">
+					<strong>Санкт-Петербург</strong><br />
+					<em>7 марта</em><br />
+					Начало в 19:00<br />
+					Клуб «Лёгкий пар», ул. Строителей, д. 9. Тел.: +7 7342 74382
+					<br />
+					<a href="#" class="btn">купить билет</a>
+				</div>
+
+				<div class="afisha__item">
+					<strong>Калининград</strong><br />
+					<em>9 марта</em><br />
+					Начало в 19:00<br />
+					Клуб «Малина», ул. Калины, Дворец спорта им. Ленина, д. 6, кор. 34. Тел.: +7 7342 74382
+					<br />
+					<a href="#" class="btn">купить билет</a>
+				</div>
+
+
+				<div class="paging">
+					<a href="#">1</a>
+					<a href="#">2</a>
+					<a href="#">3</a>
+				</div>
 
 			</article>
-			<!-- /.post -->
 
 		</div>
 	</div>
@@ -107,17 +159,48 @@
 </div>
 <footer class="footer">
 	<div class="footer__top">
-		<div class="footer__inn">
-			sad
+		<div class="footer__inn i-clearfix">
+			<div class="footer__top__r i-clearfix">
+				<input type="text" class="txt" placeholder="Адрес электронной почты"><a href="#">Подписаться</a>
+			</div>
+			<div class="footer__top__l">
+				Хотите быть в курсе последних новостей группы? Подпишитесь!
+			</div>
 		</div>
 	</div>
-	<div class="footer__inn">
-		<div class="footer__nav">
-			counter.gif
+	<div class="footer__inn i-clearfix">
+		<div class="footer__copyright">
+			<a href="#"><img src="images/footer__copyright1.png" alt="" /></a>
+			<a href="#"><img src="images/footer__copyright2.png" alt="" /></a>
+			<a href="#"><img src="images/footer__copyright3.png" alt="" /></a>
+			<a href="#"><img src="images/footer__copyright4.png" alt="" /></a>
+			<br />
+			© Navigator Records, 2014
 		</div>
 
-		<div class="footer__bottom">
-			<a href="#">copyright</a>
+		<div class="footer__contacts">
+			<h3>Контакты:</h3>
+			<div class="footer__contacts__bl">
+				Внутренние вопросы: <br />
+				Карен Арутюнян<br />
+				<a href="#">karen11@list.ru</a><br />
+				+7 965 197 11 11
+			</div>
+			<div class="footer__contacts__bl">
+				Организация концертов:<br />
+				Алексей Ростоцкий<br />
+				<a href="#">booking@navigatorrecords.ru</a><br />
+				+7 903 674 61 81
+			</div>
+			<div class="footer__contacts__bl">
+				PR & Promo:<br />
+				Наталья Табачкова<br />
+				<a href="#">toba@navigatorrecords.ru</a><br />
+				+7 916 693 40 21
+			</div>
+			<div class="footer__contacts__bl2">
+				<a href="#">Технический райдер группы</a>
+			</div>
 		</div>
 	</div>
 </footer>
