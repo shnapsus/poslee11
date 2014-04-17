@@ -443,10 +443,10 @@ CONTENT
 	line-height: 26px;
 	text-decoration: none;
 	color: #FFF;
-	background: #62768E;
+	background: #8393b2;
 }
 .afisha__item .btn:hover{
-	background: #3e4656;
+	background: #62768E;
 }
 
 
@@ -585,12 +585,13 @@ CONTENT
 .news__one.open .more{
 	display: block;
 }
-.news__one a.show__more{
+
+.sots__ico{
 	display: inline-block;
 	*display: inline;
 	vertical-align: top;
 	zoom: 1;
-	margin: 0 0 5px 0;
+	margin: 5px 0 0 0;
 }
 
 
