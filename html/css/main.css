@@ -370,6 +370,7 @@ SIDEBAR
 	text-decoration: none;
 	color: #FFF;
 	background: url(../images/footer__copyright1.png) left top no-repeat;
+	background-size: 30px 30px;
 }
 .sotial .sotial2{
 	background: url(../images/footer__copyright2.png) left top no-repeat;
@@ -381,6 +382,21 @@ SIDEBAR
 	background: url(../images/footer__copyright4.png) left top no-repeat;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (min-resolution: 144dpi) {
+	.sotial .sotial1{
+		background-image: url(../images/footer__copyright2@2x.png);
+	}
+	.sotial .sotial2{
+		background-image: url(../images/footer__copyright2@2x.png);
+	}
+	.sotial .sotial3{
+		background-image: url(../images/footer__copyright3@2x.png);
+	}
+	.sotial .sotial4{
+		background-image: url(../images/footer__copyright4@2x.png);
+	}
+}
 
 /************************************************************************************
 CONTENT
@@ -427,7 +443,7 @@ CONTENT
 	line-height: 26px;
 	text-decoration: none;
 	color: #FFF;
-	background: #8393b2;
+	background: #62768E;
 }
 .afisha__item .btn:hover{
 	background: #3e4656;

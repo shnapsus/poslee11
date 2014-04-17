@@ -46,5 +46,35 @@ $(document).ready(function(){
 		});
 	}
 
+	if($('.various').length>0){
+		$(".various").fancybox({
+			maxWidth	: 800,
+			maxHeight	: 600,
+			fitToView	: false,
+			width		: '70%',
+			height		: '70%',
+			autoSize	: false,
+			closeClick	: false,
+			openEffect	: 'none',
+			closeEffect	: 'none'
+		});
+	}
+
+
+	if (window.devicePixelRatio > 1) {
+		var lowresImages = $('.footer__copyright img');
+		images.each(function(i) {
+			var lowres = $(this).attr('src');
+			var highres = lowres.replace(".", "@2x.");
+			$(this).attr('src', highres);
+		});
+		var lowresImages = $('.album__btns img');
+		images.each(function(i) {
+			var lowres = $(this).attr('src');
+			var highres = lowres.replace(".", "@2x.");
+			$(this).attr('src', highres);
+		});
+	}
+
 	jQuery('input[placeholder], textarea[placeholder]').placeholder();
 });
