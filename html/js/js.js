@@ -26,8 +26,15 @@ $(document).ready(function(){
 	});
 
 	$('.photo__item').click(function () {
-		$('.photo__row__h').css('display', 'none');
-		$('.photo__row'+ $(this).attr('href')).css('display', 'block');
+		if($(this).hasClass('cur')){
+			$('.photo__item.cur').removeClass('cur');
+			$('.photo__row__h').css('display', 'none');
+		} else {
+			$('.photo__item.cur').removeClass('cur');
+			$(this).addClass('cur');
+			$('.photo__row__h').css('display', 'none');
+			$('.photo__row'+ $(this).attr('href')).css('display', 'block');
+		}
 
 		return false;
 	});
